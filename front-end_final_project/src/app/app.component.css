@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: lightgrey;
+  color: #474647;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
+}
+
+main{
+  min-height: 75%;
+}
+
+.banner{
+  background-color: #474647;
+  color: lightgrey;
+  height: 150px;
+  margin: 0 auto 10px auto;
+  font-size: 25px;
+  padding: 20px 0 20px 0;
+}
+
+#title_container{
+  padding: 20px auto 20px auto;
+  display: flex;
+  height: 100px;
+  width: 960px;
+  margin: 0 auto 0 auto;
+  align-self: center;
+}
+
+.banner:hover{
+  cursor: pointer;
+}
+
+.icon{
+  height: 90px;
+  width: 90px;
+}
+
+.icon img{
+  width: fit-content;
+  height: fit-content;
+}
+
+.title{
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: fit-content;
+  font-family: 'Sniglet', cursive;
+}
+
+h1{
+  font-size: 2.5em;
+  margin: 2px auto 2px auto;
+  height: 28px;
+  width: fit-content;
+  color: #49C17F;
+}
+.title article{
+  font-max-size: 1em;
+  margin: 0 auto 2px auto;
+  height: 28px;
+  width: fit-content;
+}
+
+nav{
+  width: auto;
+  height: 50px;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 1em auto 1em auto;
+  font-family: 'Sniglet', cursive;
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullets. */
+  margin: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 0 1em 0 1em;
+  min-width: 30px;
+}
+
+nav ul li a, nav ul li{
+  padding-left: 30px;
+  padding-right: 30px;
+  text-decoration: none;
+  color: #3ED682;
+}
+
+nav ul li a:hover, nav ul li:hover {
+  cursor: pointer;
+  background-color: #3ED682;
+  color: #EFEFEF;
+  -moz-transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+footer {
+  font-family: 'Sniglet', cursive;
+  background-color: #474647;
+  color: #49C17F;
+  min-height: 100px;
+  width: auto;
+  font-size: 1.75em;
+  text-align: center;
+  clear: both;
+  margin: 4em auto auto;
+}
+
+footer p {
+  font-size: 0.75em;
+}
+
+footer a{
+  color:lightgrey;
+}
+
+h2 {
+  font-family: 'Sniglet', cursive;
+}
+
+i {
+  color: #474647 !important;
+}
+
+i:hover{
+  cursor: pointer;
+  color: #3ED682 !important;
+}
+

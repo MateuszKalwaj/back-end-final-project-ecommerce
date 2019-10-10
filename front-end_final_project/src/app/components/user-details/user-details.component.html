@@ -1,0 +1,13 @@
+<div class="user_details">
+  <h2>{{user.login | uppercase}}</h2>
+  <div style="display: none"><span>id: </span>{{user.id}}</div>
+  <div class="user_info"><span>{{ 'vocab.name' | translate }}: </span>{{user.name}}</div>
+  <div class="user_info"><span>{{ 'vocab.surname' | translate }}: </span>{{user.surname}}</div>
+  <div class="user_info"><span>Login: </span>{{user.login}}</div>
+  <div class="user_info"><span>{{ 'vocab.activated' | translate }}: </span>{{user.accepted}}</div>
+  <div class="user_info"><span>{{ 'vocab.role' | translate }}: </span>{{user.role}}</div>
+  <div><button routerLink="/products-users/{{user.id}}"><i class="fas fa-store-alt"></i></button></div>
+</div>
+<div id="button-container">
+  <button class="back" (click)="goBack()"><i class="fas fa-backward"></i></button>
+</div>

@@ -1,0 +1,37 @@
+<div class="product_details">
+  <h2>{{'vocab.add-new-product' | translate}}</h2>
+  <div>
+    <label>{{'vocab.product-name' | translate}}:
+      <input [(ngModel)]="product.name" placeholder="{{'vocab.product-name' | translate}}"/>
+    </label>
+  </div>
+  <div>
+    <label>{{'vocab.desc' | translate}}:
+      <input [(ngModel)]="product.description" placeholder="{{'vocab.desc' | translate}}"/>
+    </label>
+  </div>
+  <div>
+    <label>{{'vocab.price' | translate}}:
+      <input [(ngModel)]="product.price" placeholder="{{'vocab.price' | translate}}"/>
+    </label>
+  </div>
+  <div>
+    <label>{{'vocab.available' | translate}}?
+      <select [(ngModel)]="product.available" name="available">
+        <option value="true">{{ 'vocab.yes' | translate }}</option>
+        <option value="false">{{ 'vocab.no' | translate }}</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <label>{{'vocab.photo' | translate}} (url):
+      <input [(ngModel)]="product.url" placeholder="url"/>
+    </label>
+  </div>
+  <button (click)="saveNewProduct()">{{'vocab.save-changes' | translate}}</button>
+</div>
+<div id="button-container">
+  <button class="back" (click)="goBack()"><i class="fas fa-backward"></i></button>
+</div>
+
+

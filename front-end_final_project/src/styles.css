@@ -1,0 +1,51 @@
+button {
+  background-color: #474647;
+  color: #3ED682;
+  border: #474647 2px solid;
+  border-radius: 5px;
+  font-family: 'Sniglet', cursive;
+  height: 40px;
+  width: auto;
+  font-size: 1.5em;
+  margin: 0.25em;
+}
+button:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+  color: #474647;
+}
+
+input, select {
+  background-color: #EFEFEF;
+  color: #474647;
+  border: #474647 2px solid;
+  border-radius: 5px;
+  font-family: 'Sniglet', cursive;
+  height: 40px;
+  width: 250px;
+  font-size: 1em;
+}
+
+.eng {
+  background-color: #EFEFEF;
+  border-color: mediumblue;
+  color: blue;
+  float: right;
+}
+.eng:hover {
+  background-color: blue;
+  border-color: blue;
+  color: #EFEFEF;
+}
+
+.pl {
+  background-color: #EFEFEF;
+  border-color: red;
+  color: red;
+  float: right;
+}
+.pl:hover {
+  background-color: red;
+  border-color: red;
+  color: #EFEFEF;
+}

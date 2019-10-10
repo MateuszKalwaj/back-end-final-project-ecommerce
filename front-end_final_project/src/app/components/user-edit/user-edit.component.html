@@ -1,0 +1,36 @@
+<div class="user_details">
+  <h2>{{user.login | uppercase}}</h2>
+  <div style="display: none"><span>id: </span>{{user.id}}</div>
+  <div>
+    <label>{{'vocab.name' | translate}}:
+    <input [(ngModel)]="user.name" placeholder="name"/>
+  </label>
+  </div>
+  <div>
+    <label>{{'vocab.surname' | translate}}:
+      <input [(ngModel)]="user.surname" placeholder="surname"/>
+    </label>
+  </div>
+  <div>
+    <label>Login:
+      <input [(ngModel)]="user.login" placeholder="login"/>
+    </label>
+  </div>
+  <div>
+    <label>{{'vocab.password' | translate}}:
+      <input type="password" [(ngModel)]="user.password" placeholder="password"/>
+    </label>
+  </div>
+  <div>
+    <label>{{'vocab.role' | translate}}:
+      <select [(ngModel)]="user.role" name="role">
+        <option value="USER">{{'vocab.user' | translate}}</option>
+        <option value="ADMIN">{{'vocab.admin' | translate}}</option>
+      </select>
+    </label>
+  </div>
+  <button (click)="saveUserChanges()">{{'vocab.saveChanges' | translate}}</button>
+</div>
+<div id="button-container">
+  <button class="back" (click)="goBack()"><i class="fas fa-backward"></i></button>
+</div>
